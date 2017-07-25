@@ -1,6 +1,6 @@
 /* Bootstrap Variables */
 $icon-font-path: "../bower_components/bootstrap-sass/assets/fonts/bootstrap/";
-
+$grid-gutter-width: 10px;
 /* Import Bootstrap */
 @import "../bower_components/bootstrap-sass/assets/stylesheets/bootstrap";
 
@@ -21,10 +21,10 @@ body{
 }
 
 
-.headbutton-col{
-  padding-left: 3px;
-  padding-right: 3px;
-}
+// .headbutton-col{
+//   padding-left: 3px;
+//   padding-right: 3px;
+// }
 
 .headbutton{
   background-color: $headbutton_color;
@@ -51,12 +51,6 @@ body{
   margin-top: 10px;
 }
 
-.col-pg-1{
-  padding-left: 3px;
-  padding-right: 3px;
-  margin-left: 0;
-  margin-right: 0;
-}
 
 .pg-1{
   background-color: $white;
@@ -71,5 +65,17 @@ body{
   h2{
     font-size: 10px;
     text-align: center;
+    color: $headbutton_color;
   }
+}
+
+.sk8er-row{
+  margin-top: 10px;
+}
+
+.skater1{
+  background-image: url("../skateboard-images/sk8er-4.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 200px;
 }
