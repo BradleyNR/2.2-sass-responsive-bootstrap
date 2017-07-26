@@ -3,7 +3,9 @@ $icon-font-path: "../bower_components/bootstrap-sass/assets/fonts/bootstrap/";
 $grid-gutter-width: 10px;
 /* Import Bootstrap */
 @import "../bower_components/bootstrap-sass/assets/stylesheets/bootstrap";
-
+*{
+  box-sizing: border-box;
+}
 //Colors
 $headbutton_color: #CC0000;
 $white: #FFFFFF;
@@ -134,7 +136,7 @@ body{
 
 .pg-1{
   background-color: $white;
-  height: 270px;
+  height: 300px;
   padding: 15px;
   box-shadow: 0px 3px 0px #919091;
   h1{
@@ -201,7 +203,7 @@ body{
   background-size: cover;
   height: 190px;
   border: 5px solid $white;
-  // background-position: 0px -80px;
+  background-position: 0px -50px;
   padding-top: 60px;
 
 }
@@ -213,44 +215,142 @@ body{
   display: flex;
   justify-content: space-between;
   box-shadow: 0px 3px 0px #919091;
-
-  img{
-    // padding: 10px;
-
-  }
-
 }
+
+
 
 .bottomsection{
   background-color: $white;
   display: flex;
   margin-top: 10px;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
   box-shadow: 0px 3px 0px #919091;
+  height: 330px;
 
 }
+// WHY DOES THIS NOT WORK
+// .specialcol1{
+//   padding-right: 0 !important;
+//
+// }
+//
+// .specialcol2{
+//   padding-right: 0 !important;
+//
+// }
 
 .bottomtext{
-  padding-left: 30px;
-  width: 40%;
+  padding: 30px;
 }
 
 .bigform{
-  padding: 10px;
-  margin-top: 15px;
-  width: 65%;
+  background-color: $white;
+  margin-top: 10px;
+  height: 330px;
+  padding: 30px;
+  margin-bottom: 30px;
+
 }
 
 .form-group input{
   border-radius: 0;
 }
 
-#buttonbottom{
+#button_one {
   background-color: $headbutton_color;
   float: right;
   width: 40%;
   border-radius: 0;
   color: $white;
   text-transform: uppercase;
+
+}
+
+
+
+
+@media (max-width: 992px){  //phone breakpoint
+  .navbuttonstop{
+    font-size: 50px;
+  }
+  .navigationheader p{
+    padding-top: 28px;
+  }
+
+  .headbutton{
+    margin-bottom: 10px;
+  }
+
+  .banner1{
+    background-position: 0 0;
+  }
+
+  .pg-1{
+    margin: 0;
+    padding: 20px;
+    height: auto;
+
+    h1{
+      text-align: center;
+    }
+
+    p{
+      font-size: 16px;
+    }
+    h2{
+      font-size: 14px;
+    }
+  }
+
+  .tenboards{
+  }
+
+  .tenboards img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+  }
+
+  .bottomsection{
+    height: auto;
+  }
+
+  .skater1{
+    background-position: 0 -30px;
+    padding-top: 65px;
+    text-align: left;
+    padding-left: 20px;
+  }
+
+  .skater2{
+    background-position: 0px -70px;
+    padding-top: 65px;
+    text-align: right;
+    padding-right: 20px;
+  }
+
+  .skater3{
+    background-position: 0 -40px;
+    height: 200px;
+    padding-top: 65px;
+    text-align: left;
+    padding-left: 20px;
+
+
+  }
+
+  .skater4{
+    background-position: 0 -70px;
+    height: 200px;
+    padding-top: 65px;
+    text-align: right;
+    padding-right: 20px;
+  }
+
+  .bottomtext h3{
+    font-size: 36px;
+  }
+
 
 }
