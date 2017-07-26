@@ -5857,13 +5857,20 @@ body {
 .sk8er-row {
   margin-top: 10px; }
 
+.allskater {
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 40px;
+  font-weight: bold;
+  vertical-align: middle;
+  padding-top: 40px; }
+
 .skater1 {
   background-image: url("../skateboard-images/sk8er-4.png");
   background-repeat: no-repeat;
   background-size: cover;
   height: 200px;
-  border: 5px solid #FFFFFF;
-  background-position: -50px 0px; }
+  border: 5px solid #FFFFFF; }
 
 .skater2 {
   background-image: url("../skateboard-images/sk8er-3.png");
@@ -5877,7 +5884,9 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   height: 400px;
-  border: 5px solid #FFFFFF; }
+  border: 5px solid #FFFFFF;
+  background-position: -330px 0px;
+  padding-top: 140px; }
 
 .skater4 {
   background-image: url("../skateboard-images/sk8er-1.png");
@@ -5885,6 +5894,7 @@ body {
   background-size: cover;
   height: 190px;
   border: 5px solid #FFFFFF;
-  background-position: 0px -80px; }
+  background-position: 0px -80px;
+  padding-top: 60px; }
 
 /*# sourceMappingURL=styles.css.map */
