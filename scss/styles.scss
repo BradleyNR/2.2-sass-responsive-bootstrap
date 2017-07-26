@@ -21,30 +21,52 @@ body{
 }
 
 
-// .headbutton-col{
-//   padding-left: 3px;
-//   padding-right: 3px;
-// }
 
 .headbutton{
   background-color: $headbutton_color;
   text-align: center;
   color: $white;
-  margin-bottom: 15px;
-  margin-top: 15px;
-  padding: 5px;
+  font-size: 16px;
+  padding: 10px;
+  position: relative;  //absolute the children
+
+  &::before, &::after{
+    content: '';
+    display: block;
+    width: 15px;
+    border-bottom: 2px solid $white;
+    position: absolute;
+    top: 50%;
+  }
+
+  &::before{left: 0px}
+  &::after{right: 0px;}
 }
 
-
-
+.banner-photo-row{
+  margin-top: 10px;
+}
 
 
 .banner1{
   background-image: url("../skateboard-images/top-image.png");
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: 0px -90px;
   height: 200px;
   border: 5px solid $white;
+  // position: relative;   //For children
+
+  // &::before{
+  //   content: "";
+  //   display: block;
+  //   position: absolute;
+  //   top: 0;
+  //   bottom: 0;
+  //   left: 0;
+  //   right: 0;
+  //   background: rgba(0, 0, 0, 0.5), url("../skateboard-images/grid.png");
+  // }
 }
 
 .pg-1-row{
@@ -78,4 +100,31 @@ body{
   background-repeat: no-repeat;
   background-size: cover;
   height: 200px;
+  border: 5px solid $white;
+  background-position: -50px 0px;
+}
+
+.skater2{
+  background-image: url("../skateboard-images/sk8er-3.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 200px;
+  border: 5px solid $white;
+}
+
+.skater3{
+  background-image: url("../skateboard-images/sk8er-2.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 400px;
+  border: 5px solid $white;
+}
+
+.skater4{
+  background-image: url("../skateboard-images/sk8er-1.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 190px;
+  border: 5px solid $white;
+  background-position: 0px -80px;
 }
