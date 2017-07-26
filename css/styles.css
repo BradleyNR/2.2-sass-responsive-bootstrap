@@ -5803,6 +5803,8 @@ body {
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../skateboard-images/bg.jpg");
   background-size: 100%;
   background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
   background-position: right; }
 
 .container {
@@ -5810,6 +5812,7 @@ body {
 
 .headbutton {
   background-color: #A15250;
+  display: block;
   text-align: center;
   color: #FFFFFF;
   font-size: 16px;
@@ -5823,9 +5826,9 @@ body {
     position: absolute;
     top: 50%; }
   .headbutton::before {
-    left: 0px; }
+    left: 10px; }
   .headbutton::after {
-    right: 0px; }
+    right: 10px; }
 
 .banner-photo-row {
   margin-top: 10px; }
@@ -5838,6 +5841,14 @@ body {
   height: 200px;
   border: 5px solid #FFFFFF; }
 
+.logo-banner {
+  background-image: url("../skateboard-images/peralta-logo.png");
+  width: 310px;
+  height: 180px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-top: 5px; }
+
 .pg-1-row {
   margin-top: 10px; }
 
@@ -5846,7 +5857,7 @@ body {
   height: 270px;
   padding: 15px; }
   .pg-1 h1 {
-    font-size: 18px; }
+    font-size: 20px; }
   .pg-1 p {
     font-size: 12px; }
   .pg-1 h2 {
@@ -5896,5 +5907,33 @@ body {
   border: 5px solid #FFFFFF;
   background-position: 0px -80px;
   padding-top: 60px; }
+
+.tenboards {
+  background-color: #FFFFFF;
+  display: flex;
+  justify-content: space-between; }
+  .tenboards img {
+    padding: 10px; }
+
+.bottomsection {
+  background-color: #FFFFFF;
+  display: flex;
+  margin-top: 10px;
+  margin-bottom: 50px; }
+
+.bottomtext {
+  padding-left: 30px;
+  width: 40%; }
+
+.bigform {
+  padding: 10px;
+  margin-top: 15px;
+  width: 65%; }
+
+.form-group input {
+  border-radius: 0; }
+
+#buttonbottom {
+  background-color: #A15250; }
 
 /*# sourceMappingURL=styles.css.map */
