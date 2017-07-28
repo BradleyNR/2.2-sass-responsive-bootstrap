@@ -1,37 +1,40 @@
 (function(){
   'use strict';
+//Experimental Javascript used to resize container sizes. Only a test.
 
 
-  var left = document.getElementById('bottomsection').clientHeight;
-  var right = document.getElementById('bigform').clientHeight;
+
+  var leftContainer = document.getElementById('bottomsection');
+  var rightContainer = document.getElementById('bigform');
+  // var left = document.getElementById('bottomsection').clientHeight;
+  // var right = document.getElementById('bigform').clientHeight;
 
 
-//the following function will replace the values for the left and right column height
-//with the current height according to window resize. Then, it will replace the smaller
-///div's height with the larger div's height
+  //the following function will replace the values for the left and right column height
+  //with the current height according to window resize. Then, it will replace the smaller
+  ///div's height with the larger div's height
 
-function matchSizes(){
-   left = document.getElementById('bottomsection').clientHeight;
-   right = document.getElementById('bigform').clientHeight;
+  function matchSizes(){
+    leftContainer.style.height = 'auto';
+    rightContainer.style.height = 'auto';
 
-  if(left > right){
-    document.getElementById('bigform').style.height=left + 'px';
+    var leftContainerHeight = leftContainer.clientHeight
+    , rightContainerHeight = rightContainer.clientHeight;
+
+    if(window.innerWidth <= 768){
+      return;
+    }
+
+    if(leftContainerHeight > rightContainerHeight){
+      rightContainer.style.height = leftContainerHeight + 'px';
+    }else{
+      leftContainer.style.height = rightContainerHeight + 'px';
+    }
+   console.log('hello');
+    // setTimeout(matchSizes, 500);
   }
- console.log('hello');
-  // setTimeout(matchSizes, 500);
-}
 
-
-
-console.log(left);
-console.log(right);
-
-
-
-
-matchSizes()
-
-window.addEventListener("resize", matchSizes);
-
-
-    }());
+  // register resize and run on page load
+  window.addEventListener("resize", matchSizes);
+  matchSizes();
+}());
