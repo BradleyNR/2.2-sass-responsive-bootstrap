@@ -5829,16 +5829,28 @@ body {
   font-size: 60px; }
 
 #facebook {
-  color: #495C91; }
+  color: #495C91;
+  text-decoration: none; }
+  #facebook:hover {
+    color: #8191bf; }
 
 #rss {
-  color: #BC914E; }
+  color: #BC914E;
+  text-decoration: none; }
+  #rss:hover {
+    color: #d8bf98; }
 
 #twitter {
-  color: #758FC1; }
+  color: #758FC1;
+  text-decoration: none; }
+  #twitter:hover {
+    color: #bbc8e1; }
 
 #youtube {
-  color: #994A3D; }
+  color: #994A3D;
+  text-decoration: none; }
+  #youtube:hover {
+    color: #c88074; }
 
 .headbutton {
   background-color: #CC0000;
@@ -5860,6 +5872,10 @@ body {
     left: 10px; }
   .headbutton::after {
     right: 10px; }
+  .headbutton:hover {
+    text-decoration: none;
+    font-weight: bolder;
+    color: #758FC1; }
 
 .banner-photo-row {
   margin-top: 10px; }
@@ -5947,23 +5963,25 @@ body {
   background-color: #FFFFFF;
   display: flex;
   justify-content: space-between;
-  box-shadow: 0px 3px 0px #919091; }
+  box-shadow: 0px 3px 0px #919091;
+  padding-left: 5px;
+  padding-right: 5px; }
 
-.bottomsection {
+#bottomsection {
   background-color: #FFFFFF;
   display: flex;
   margin-top: 10px;
   margin-bottom: 30px;
   box-shadow: 0px 3px 0px #919091;
-  height: 330px; }
+  height: auto; }
 
 .bottomtext {
   padding: 30px; }
 
-.bigform {
+#bigform {
   background-color: #FFFFFF;
   margin-top: 10px;
-  height: 330px;
+  height: inherit;
   padding: 30px;
   margin-bottom: 30px; }
 
@@ -5977,6 +5995,10 @@ body {
   border-radius: 0;
   color: #FFFFFF;
   text-transform: uppercase; }
+
+.bottom-buttons-nav a {
+  font-size: 30px;
+  text-decoration: none; }
 
 @media (max-width: 992px) {
   .navbuttonstop {
