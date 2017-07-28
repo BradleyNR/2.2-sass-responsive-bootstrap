@@ -6,6 +6,10 @@
   var right = document.getElementById('bigform').clientHeight;
 
 
+//the following function will replace the values for the left and right column height
+//with the current height according to window resize. Then, it will replace the smaller
+///div's height with the larger div's height
+
 function matchSizes(){
    left = document.getElementById('bottomsection').clientHeight;
    right = document.getElementById('bigform').clientHeight;

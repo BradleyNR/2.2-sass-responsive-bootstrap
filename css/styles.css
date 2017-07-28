@@ -5969,7 +5969,6 @@ body {
 
 #bottomsection {
   background-color: #FFFFFF;
-  display: flex;
   margin-top: 10px;
   margin-bottom: 30px;
   box-shadow: 0px 3px 0px #919091; }
@@ -5980,7 +5979,6 @@ body {
 #bigform {
   background-color: #FFFFFF;
   margin-top: 10px;
-  height: inherit;
   padding: 30px;
   margin-bottom: 30px;
   box-shadow: 0px 3px 0px #919091; }
