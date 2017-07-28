@@ -5972,8 +5972,7 @@ body {
   display: flex;
   margin-top: 10px;
   margin-bottom: 30px;
-  box-shadow: 0px 3px 0px #919091;
-  height: auto; }
+  box-shadow: 0px 3px 0px #919091; }
 
 .bottomtext {
   padding: 30px; }
@@ -5983,7 +5982,8 @@ body {
   margin-top: 10px;
   height: inherit;
   padding: 30px;
-  margin-bottom: 30px; }
+  margin-bottom: 30px;
+  box-shadow: 0px 3px 0px #919091; }
 
 .form-group input {
   border-radius: 0; }
@@ -6023,6 +6023,9 @@ body {
       font-size: 16px; }
     .pg-1 h2 {
       font-size: 14px; }
+
+  .tenboards {
+    flex-wrap: wrap; }
 
   .tenboards img {
     display: block;
